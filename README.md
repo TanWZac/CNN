@@ -28,10 +28,9 @@ Separate images into pos and neg, saving in different folder and assign labels o
 
 ## CNN model
 
-Conv2D -> Conv2D -> Conv2D -> Batch norm -> maxPool -> Dropout -
+Conv2D -> Conv2D -> Conv2D -> Batch norm -> maxPool -> Dropout -> flatten -> Dense ('relu') -> softmax
   |------------------------------------------------------------|
-                            x3                                 v
-                                                            flatten -> Dense ('relu') -> softmax
+                            x3                                 
 
 The first convolutional layer learns basic features like edges, lines, and curves. The second layer combines these features to detect more complex shapes and structures, such as textures and shapes of objects. The third layer further combines these features to identify even more complex patterns and structures in the input image. The input to each layer changes as the network learns. This can cause the distribution of inputs to each layer to shift, a problem known as "internal covariate shift." This shift can cause the network to take longer to train, or even to stop learning entirely. 
 
