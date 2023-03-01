@@ -28,9 +28,11 @@ Separate images into pos and neg, saving in different folder and assign labels o
 
 ## CNN model
 
-Conv2D -> Conv2D -> Conv2D -> Batch norm -> maxPool -> Dropout -> flatten -> Dense ('relu') -> softmax
+for i in range(3):
+    Conv2D -> Conv2D -> Conv2D -> Batch norm -> maxPool -> Dropout ->
 
-  |_______________________________________________________ x3|
+flatten -> Dense ('relu') -> softmax
+
 The first convolutional layer learns basic features like edges, lines, and curves. The second layer combines these features to detect more complex shapes and structures, such as textures and shapes of objects. The third layer further combines these features to identify even more complex patterns and structures in the input image. The input to each layer changes as the network learns. This can cause the distribution of inputs to each layer to shift, a problem known as "internal covariate shift." This shift can cause the network to take longer to train, or even to stop learning entirely. 
 
 In order to improve the training stability, adding batch normalisation to calculates the mean and standard deviation of the inputs in a batch, and normalises the inputs to have zero mean and unit variance reducing the impact of internal covariate shift. I also added Maxpooling to reduce the number of parameters and computation required by the neural network, which in turn can improve its efficiency and ability to generalize to new data and dropping out random neurons to maintains the models robustness.
