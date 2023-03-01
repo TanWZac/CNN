@@ -12,7 +12,6 @@ The original dataset contained 162 whole mount slide images of specimens from pa
 The file names for each patch contain useful information, such as the patient ID (which is "u" followed by a unique identifier like "10253_idx5"), as well as the x and y coordinates of the patch's location on the original slide. Additionally, each file name includes a "class" designation, where 0 represents a patch that does not contain IDC, and 1 represents a patch that does contain IDC. For example, a patch with the file name "10253_idx5_x1351_y1101_class0.png" would indicate that it was taken from a patient with ID "10253_idx5," and it does not contain IDC.
 
  e.g. 10253_idx5_x1001_y1301_class0.png
-        |          |     |     |     |  
         
      patient_id    |     |     |     |
         
