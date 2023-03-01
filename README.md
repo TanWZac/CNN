@@ -13,11 +13,16 @@ The file names for each patch contain useful information, such as the patient ID
 
  e.g. 10253_idx5_x1001_y1301_class0.png
         |          |     |     |     |  
+        
      patient_id    |     |     |     |
+        
             x-coordinate |     |     |
+     
                  y-coordinate  |     |
+         
           cancer class[No 0/ Yes 1]  |
-                                  file type
+         
+                                 file type
 
 image examples ![10253_idx5_x1001_y1001_class0](https://user-images.githubusercontent.com/100010968/201340965-cdb25d25-2af6-41d3-9a58-fd1d4a4bfbde.png)
 ![10253_idx5_x501_y401_class1](https://user-images.githubusercontent.com/100010968/201340968-bb5c503b-cb7c-43d6-b6d9-5ccd132fd231.png)
