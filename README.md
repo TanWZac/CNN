@@ -29,6 +29,7 @@ Separate images into pos and neg, saving in different folder and assign labels o
 ## CNN model
 
 for i in range(3):
+
     Conv2D -> Conv2D -> Conv2D -> Batch norm -> maxPool -> Dropout ->
 
 flatten -> Dense ('relu') -> softmax
